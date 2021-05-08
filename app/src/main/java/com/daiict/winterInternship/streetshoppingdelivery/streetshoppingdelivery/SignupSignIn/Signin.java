@@ -63,23 +63,24 @@ public class Signin extends AppCompatActivity {
 
             // Progress Dialog Here......
             relativeLayoutProgress.setVisibility(View.VISIBLE);
-            //SignInConnection(editTextEmailLogin.getText().toString().trim(),editTextPasswordLogin.getText().toString().trim());
+            SignInConnection(editTextEmailLogin.getText().toString().trim(), editTextPasswordLogin.getText().toString().trim());
             // dataFetchAttempt();
-            if(idPassCheck())
-            {
-                Intent intent = new Intent(Signin.this, DashboardBottomNav.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            if(idPassCheck())
+//            {
+//                Intent intent = new Intent(Signin.this, DashboardBottomNav.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//
+//                //CallDataFetching Method
+//
+//                //set progressbar Off
+//                relativeLayoutProgress.setVisibility(View.GONE);
+//                startActivity(intent);
+//                finish();
+//            }
+//        }
 
-                //CallDataFetching Method
-
-                //set progressbar Off
-                relativeLayoutProgress.setVisibility(View.GONE);
-                startActivity(intent);
-                finish();
-            }
         }
-
-        }
+    }
 
 
 
